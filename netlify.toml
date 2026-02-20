@@ -1,10 +1,11 @@
 [build]
-  # No 'base' here. We handle the navigation in the command.
-  command = "cd hackathon/pharmaguard_frontend && npm run build"
-  publish = "hackathon/pharmaguard_frontend/.next"
+  # Navigate to frontend, install dependencies, then build
+  command = "cd hackathon/pharmaguard_frontend && npm install && npm run build"
+  # Vite projects output to 'dist' by default
+  publish = "hackathon/pharmaguard_frontend/dist"
 
 [functions]
-  # Path relative to the root of the repo
+  # Path to your backend folder
   directory = "hackathon/pharmaguard_backend"
   node_bundler = "esbuild"
 
