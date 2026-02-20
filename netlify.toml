@@ -1,0 +1,15 @@
+# Frontend Configuration (Next.js)
+[build]
+  base = "frontend"
+  command = "npm run build"
+  publish = ".next"
+
+# Backend Configuration (FastAPI as a Function)
+[functions]
+  directory = "backend"
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/handler/:splat"
+  status = 200

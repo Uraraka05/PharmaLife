@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply font-sans;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100;
+}
+
+.card {
+  @apply rounded-2xl bg-slate-900/80 border border-slate-800 shadow-card backdrop-blur-sm;
+}
+
+.card-hover {
+  @apply transition-transform transition-shadow duration-200 hover:-translate-y-0.5 hover:shadow-lg;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-teal px-6 py-3 text-sm font-semibold text-slate-950 shadow-md transition
+  hover:bg-teal/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-softBlue focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  @apply bg-slate-600 rounded-full;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  @apply bg-slate-900;
+}
+

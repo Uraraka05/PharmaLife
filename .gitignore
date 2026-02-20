@@ -1,0 +1,13 @@
+venv/
+.venv/
+env/
+pycache/
+*.pyc
+.env
+node_modules/
+.next/
+out/
+build/
+.netlify/
+.DS_Store
+Thumbs.db
