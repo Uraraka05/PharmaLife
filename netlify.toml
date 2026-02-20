@@ -1,12 +1,12 @@
-# Frontend Configuration (Next.js)
 [build]
-  base = "frontend"
+  # Point to the nested frontend folder
+  base = "hackathon/pharmaguard_frontend"
   command = "npm run build"
   publish = ".next"
 
-# Backend Configuration (FastAPI as a Function)
 [functions]
-  directory = "backend"
+  # Point to the nested backend folder
+  directory = "hackathon/pharmaguard_backend"
   node_bundler = "esbuild"
 
 [[redirects]]
