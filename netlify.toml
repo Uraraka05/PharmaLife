@@ -1,11 +1,10 @@
 [build]
-  # Point to the nested frontend folder
-  base = "hackathon/pharmaguard_frontend"
-  command = "npm run build"
-  publish = ".next"
+  # No 'base' here. We handle the navigation in the command.
+  command = "cd hackathon/pharmaguard_frontend && npm run build"
+  publish = "hackathon/pharmaguard_frontend/.next"
 
 [functions]
-  # Point to the nested backend folder
+  # Path relative to the root of the repo
   directory = "hackathon/pharmaguard_backend"
   node_bundler = "esbuild"
 
